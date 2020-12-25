@@ -146,7 +146,7 @@ Implement the same fractal using four different representations of numbers:
 (The latter two types are found in the `math/big` package.
 `Float` uses arbitrary but bounded-precision floating-point;
 `Rat` uses unbounded-precision rational numbers)
-How do theycompare in performance and memory usage?
+How do they compare in performance and memory usage?
 At what zoom levels do rendering artifacts become visible?
 
 ## [Exercise 3.9 (P63)](ch03/ex3.09)
