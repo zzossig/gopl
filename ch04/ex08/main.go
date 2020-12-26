@@ -15,7 +15,8 @@ import (
 )
 
 func main() {
-	counts := make(map[rune]int)    // counts of Unicode characters
+	letterCount := make(map[rune]int)
+	digitCount := make(map[rune]int)
 	var utflen [utf8.UTFMax + 1]int // count of lengths of UTF-8 encodings
 	invalid := 0                    // count of invalid UTF-8 characters
 
@@ -33,11 +34,20 @@ func main() {
 			invalid++
 			continue
 		}
-		counts[r]++
+		if unicode.IsLetter(r) {
+			letterCount[r]++
+		}
+		if unicode.IsDigit(r) {
+			digitCount[r]++
+		}
 		utflen[n]++
 	}
-	fmt.Printf("rune\tcount\n")
-	for c, n := range counts {
+	fmt.Printf("rune\tletter count\n")
+	for c, n := range letterCount {
+		fmt.Printf("%q\t%d\n", c, n)
+	}
+	fmt.Printf("rune\tdigit count\n")
+	for c, n := range digitCount {
 		fmt.Printf("%q\t%d\n", c, n)
 	}
 	fmt.Print("\nlen\tcount\n")
