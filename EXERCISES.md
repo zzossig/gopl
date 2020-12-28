@@ -243,32 +243,26 @@ Create a web server that queries GitHub once and then allows navigation of the l
 
 Change the `findlinks` program to traverse the `n.FirstChild` linked list using recursive calls to `visit` instead of a loop.
 
-
 ## [Exercise 5.2 (P124)](ch05/ex5.02)
 
 Write a function to populate a mapping from element names--`p, div, span, and so on`--to the number of elements with that name in an HTML document tree.
 
-
 ## [Exercise 5.3 (P124)](ch05/ex5.03)
 
 Write a function to print the contents of all text nodes. in an HTML document tree.
-Do not descend into `<script>` or `<stylr>` elements, since their contents are not visible in a web browser.
-
+Do not descend into `<script>` or `<style>` elements, since their contents are not visible in a web browser.
 
 ## [Exercise 5.4 (P124)](ch05/ex5.04)
 
 Extend the `visit` function so that it extracts other kinds of links from the document, such as image, scripts, and style sheets.
 
-
 ## [Exercise 5.5 (P127)](ch05/ex5.05)
 
 Implement `countWordAndImages`. (See Exercise 4.9 for word-splitting.)
 
-
 ## [Exercise 5.6 (P127)](ch05/ex5.06)
 
 Modify the `corner` function in `gopl.io/ch3/surface` (§3.2) to use named results and a bare return statement.
-
 
 ## [Exercise 5.7 (P134)](ch05/ex5.07)
 
