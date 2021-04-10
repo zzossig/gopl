@@ -5,3 +5,4 @@
 	`Celsius` has a `func (c Celsius) String() string` method, so `Celsius` is a `Stringer`.
 	When `flag` shows the help messages, it will call `Celsius' String` method to format the value.
 */
+package main
