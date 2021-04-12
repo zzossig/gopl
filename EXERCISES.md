@@ -472,7 +472,7 @@ Since the `Parse` function does not create instances of this new type, to use it
 
 ## [Exercise 7.15 (P205)](ch07/ex7.15)
 
-Write a program that reads a single expression from the standard input, prompts the user to provide values fro any variables, then evaluates the expression in the resulting environment. Handle all errors gracefully.
+Write a program that reads a single expression from the standard input, prompts the user to provide values for any variables, then evaluates the expression in the resulting environment. Handle all errors gracefully.
 
 ## [Exercise 7.16 (P205)](ch07/ex7.16)
 
