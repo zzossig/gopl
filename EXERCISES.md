@@ -498,7 +498,7 @@ You may find the following declarations helpful.
     type Element struct {
         Type     xml.Name
         Attr     []xml.Attr
-        Children []node
+        Children []Node
     }
 ```
 
